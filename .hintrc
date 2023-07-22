@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": "off",
+    "detect-css-reflows/paint": "off",
+    "detect-css-reflows/composite": "off",
+    "compat-api/css": "off"
+  }
+}
