@@ -1,9 +1,9 @@
 
 import SideNavbar from "./sidenav";
-import Logo from './supplie/Logo final.png'
+import Logo from './supplie/Logo final.png';
 import Footer from "./footer";
-import React from 'react'
-import Trail from './supplie/Flight n trail.png'
+import React from 'react';
+import Trail from './supplie/Flight n trail.png';
 
 export default function home() {
   return (
