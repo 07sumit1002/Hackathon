@@ -4,6 +4,7 @@ import SideNavbar from "./sidenav";
 import Footer from "./footer";
 import Mapimg from "./supplie/Maps.png";
 import Mappntr from "./supplie/Mappointer.png";
+import { Link } from "react-router-dom";
 
 const maps = () => {
   return (
@@ -24,9 +25,9 @@ const maps = () => {
               routes efficiently.
             </div>
           </div>
-          <div className="Maps-left-II">
+          <Link className="Maps-Link" to='/Reviews'><div className="Maps-left-II">
             Locations and Review
-          </div>
+          </div></Link>
         </div>
         &nbsp;
         <div className="Maps-right">
