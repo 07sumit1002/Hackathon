@@ -6,11 +6,14 @@ import axios from "axios";
 export default function ChatGPT() {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
+  const [location, setLocation] = useState("");
+  const [days, setDays] = useState("");
+  const [budget, setBudget] = useState("");
   const HTTP = "http://localhost:8080/chat";
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const prompt = `Make a tour plan to '${location}' for '${days}' days with 'Rs ${budget}' as budget...`;
     axios
       .post(`${HTTP}`, { prompt })
       .then((res) => {
@@ -21,8 +24,10 @@ export default function ChatGPT() {
         console.log(error);
       });
 
-    setPrompt("");
-  };
+      setLocation("");
+      setDays("");
+      setBudget("");
+     };
 
   const handlePrompt = (e) => {
     setPrompt(e.target.value);
@@ -37,16 +42,30 @@ export default function ChatGPT() {
             <div className="Ai-form-group">
             <label htmlFor="">Journey-Bot</label><br />
             <input
-                className="Ai-textarea"
-                type="text"
-                placeholder="Make a tour plan to 'Location' for 'x days' with 'Rs xxxx' as budget..."
-                value={prompt}
-                onChange={handlePrompt}
+              className="Ai-input"
+              type="text"
+              placeholder="Location"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+            />
+            <input
+              className="Ai-input"
+              type="text"
+              placeholder="Number of days"
+              value={days}
+              onChange={(e) => setDays(e.target.value)}
+            />
+            <input
+              className="Ai-input"
+              type="text"
+              placeholder="Budget"
+              value={budget}
+              onChange={(e) => setBudget(e.target.value)}
             />
             </div>{" "}
-            {/* <button className="btn btn-accept w-100" type="submit">
+            <button className="btn btn-accept w-100" type="submit">
             Go
-            </button> */}
+            </button>
         </form>
         <div className="Ai-response">
             <p className="Ai-response-output">
