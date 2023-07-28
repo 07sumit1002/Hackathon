@@ -11,6 +11,8 @@ import Reviews from './components/reviews'
 import './App.css';
 import React from 'react'
 
+// import Rum from "./components/rum.js"
+
 function App() {
   return (
     <>  
@@ -27,6 +29,7 @@ function App() {
         <Route path="/About" element={<About />} />    
       </Routes>
     </Router>
+    {/* <Rum /> */}
     </>
   )
 }

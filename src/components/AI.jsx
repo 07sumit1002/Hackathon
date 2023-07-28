@@ -1,7 +1,11 @@
+/* eslint-disable no-unused-vars */
+import Earth from './supplie/earth.png';
+import Time from './supplie/time.png'; 
+import Budget from './supplie/Budget.png';
 import React, { useState } from "react";
 import Navbar from "./navbar";
 import SideNavbar from "./sidenav";
-import Footer from "./footer";
+// import Footer from "./footer";
 import axios from "axios";
 export default function ChatGPT() {
   const [prompt, setPrompt] = useState("");
@@ -39,41 +43,54 @@ export default function ChatGPT() {
     <SideNavbar />
         <div className="Ai">
         <form className="Ai-form" onSubmit={handleSubmit}>
-            <div className="Ai-form-group">
-            <label htmlFor="">Journey-Bot</label><br />
-            <input
-              className="Ai-input"
-              type="text"
-              placeholder="Location"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
-            <input
-              className="Ai-input"
-              type="text"
-              placeholder="Number of days"
-              value={days}
-              onChange={(e) => setDays(e.target.value)}
-            />
-            <input
-              className="Ai-input"
-              type="text"
-              placeholder="Budget"
-              value={budget}
-              onChange={(e) => setBudget(e.target.value)}
-            />
-            </div>{" "}
-            <button className="btn btn-accept w-100" type="submit">
-            Go
-            </button>
+          <div className="Ai-form-group">
+            <div className="Ai-input-Loc"> 
+              <label className="Ai-label" htmlFor="">AI <br />ITERNARY</label><br />
+              <img className='Ai-input-img' src={Earth} alt="" />
+              <h1>01 Destination</h1>
+              <input
+                className="Ai-input"
+                type="text"
+                placeholder="Location"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+              />
+            </div>
+            <div className="Ai-input-days">
+              <img className='Ai-input-img' src={Time} alt="" />
+              <h1>02 Time Scheduling</h1>
+              <input
+                className="Ai-input"
+                type="text"
+                placeholder="Number of days < 15"
+                value={days}
+                onChange={(e) => setDays(e.target.value)}
+              />
+            </div>
+            <div className="Ai-input-rs"> 
+            <br /><br />
+              <img className='Ai-input-img' src={Budget} alt="" /> 
+              <h1>03 Money management</h1>
+              <input
+                className="Ai-input"
+                type="text"
+                placeholder="Budget in Rs"
+                value={budget}
+                onChange={(e) => setBudget(e.target.value)}
+              />
+            </div>  
+          </div>{" "}
+          <button className="Ai-btn" type="submit">
+            Generate Iternary
+          </button>
         </form>
         <div className="Ai-response">
             <p className="Ai-response-output">
-            {response ? response : "Ask me anything..."}
+            {response ? response : "Your Schedule ..."}
             </p>
         </div>
-        </div>
-    <Footer />
+        </div><br />
+    {/* <Footer /> */}
     </>
   );
 }

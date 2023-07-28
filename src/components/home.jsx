@@ -5,6 +5,38 @@ import Footer from "./footer";
 import React from 'react';
 import Trail from './supplie/Flight n trail.png';
 
+const Alert = () => {
+  return (
+    <div className="alert">
+      <div className="alert-content">
+        <h3>Select your mode of transportation</h3>
+        <p>
+          We offer a variety of transportation options to choose from, including flights, trains, buses, and cars.
+        </p>
+        <ul>
+          <li>
+            <a href="#">Flights</a>
+          </li>
+          <li>
+            <a href="#">Trains</a>
+          </li>
+          <li>
+            <a href="#">Buses</a>
+          </li>
+          <li>
+            <a href="#">Cars</a>
+          </li>
+        </ul>
+      </div>
+      <button className="close-btn" onClick={() => {
+        document.querySelector(".alert").style.display = "none";
+      }}>
+        <i className="fas fa-times"></i>
+      </button>
+    </div>
+  );
+};
+
 export default function home() {
   return (
     <>
@@ -30,6 +62,7 @@ export default function home() {
       </div>
         <SideNavbar />
       <Footer />
+      {/* <Alert /> */}
     </>
   )
 }

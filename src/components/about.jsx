@@ -2,9 +2,11 @@ import React from "react";
 import Navbar from "./navbar";
 import SideNavbar from "./sidenav";
 // import Footer from "./footer";
+import Aayush from './supplie/Aayush.jpeg';
+import Aditi from './supplie/aditi3.jpeg';
 import Mentorimg from "./supplie/Mentor.png";
 import Sumitimg from './supplie/res.jpeg';
-import memberimg from './supplie/Mentor-ing.png'
+// import memberimg from './supplie/Mentor-ing.png'
 
 const about = () => {
   return (
@@ -21,17 +23,22 @@ const about = () => {
               <img className="Mentor-img" src={Mentorimg} alt=" " />
             </a><br />
             <div className="Mentor-name">
-              We would like to extend our heartfelt gratitude to our mentor Ms
-              Somya Goyal for her invaluable guidance, support, and expertise
-              throughout this project. Ms Somya Goyal holds the position of
-              Assistant Professor at Manipal University Jaipur. Thank you for
-              being an inspiring and dedicated mentor.
+              <div className="Mentor-detail">
+                  <h2 className="Mentor-h2">Dr. Somya R. Goyal</h2>
+                  <p style={{
+                    fontWeight:'bold'
+                  }}>Assistant Professor</p>
+                  <p style={{
+                    fontWeight:'bold'
+                  }}>School of Computer and Communication Engineering</p>
+                  <p>Manipal University Jaipur</p>
+                </div>
             </div>
           </div>
           <div className="About-team">
             &nbsp;
             <div className="Member">
-              <img className="Member-img" src={memberimg} alt="" />
+              <img className="Member-img" src={Aditi} alt="" />
               &nbsp;
               <div className="Member-detail">
                 <a className="Member-link" href="https://www.linkedin.com/in/er-aditi-soni/">
@@ -44,7 +51,7 @@ const about = () => {
             </div>
             &nbsp;
             <div className="Member">
-              <img className="Member-img" src={memberimg} alt="" />
+              <img className="Member-img" src={Aayush} alt="" />
               &nbsp;
               <div className="Member-detail">
                 <a className="Member-link" href="">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAward, faMap, faGraduationCap, faTicket, faLanguage, faCalendarAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faAward, faMap, faLocation, faGraduationCap, faTicket, faLanguage, faCalendarAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 // faCreditCard, faPaypal, faBitcoin, faApplePay
 const SideNavbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -37,6 +37,12 @@ const SideNavbar = () => {
             <Link className='Sidenav' to="/Translator">&nbsp;
               <FontAwesomeIcon icon={faLanguage} />&nbsp;
               Translator
+            </Link>
+          </li>
+          <li>
+            <Link className='Sidenav' to="/Destination">&nbsp;
+              <FontAwesomeIcon icon={faLocation} />&nbsp;
+              Destination
             </Link>
           </li>
           <li>
