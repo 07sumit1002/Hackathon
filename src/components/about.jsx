@@ -54,7 +54,7 @@ const about = () => {
               <img className="Member-img" src={Aayush} alt="" />
               &nbsp;
               <div className="Member-detail">
-                <a className="Member-link" href="">
+                <a className="Member-link" href="https://www.linkedin.com/in/aayush-singh-76935b251/">
                   <h2 className="Member-h2">Aayush Singh</h2>
                 </a>
                 <p>Frontend Developer</p>

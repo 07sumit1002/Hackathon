@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
+
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -126,7 +127,7 @@ nav {
 .Sidenav-Sos{
   width: 50px;
   height: 50px;
-  margin-top: 300px;
+  margin-top: 100px;
   background-color: #cf1919;
   color: aliceblue;
   border-radius: 15px;
@@ -820,35 +821,64 @@ align-self: center;
   color: #6f6f6f;
 }
 
+/* Home page and custom */
 
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  
+  box-shadow: inset -5px -6px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+  transition: 2s ease-in-out;
+  &:hover{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+}
 
+.custom-alert h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
+.custom-alert ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.custom-alert li {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.custom-alert li:hover {
+  background-color: #7e7e7e;
+  color: thistle;
+}
 
 .Home{
-  height: 70vh;
-  width: 99%;
-  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.Home-tt{
+  height: 0vh;
+  width: 98%;
   display: flex;
 }
 
@@ -859,7 +889,7 @@ align-self: center;
 }
 
 .Home-Navbar{
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: flex-end;
 }
@@ -888,20 +918,77 @@ align-self: center;
   height: 20vh;
 }
 
+.Home-mid{
+  width: 95%;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Home-mid-1{
+  margin-top: 15vh;
+  width: 24%;
+  height: 48vh;
+  padding: 5px;
+}
 
+.Home-mid-2{
+  width: 24%;
+  height: 68vh;
+  margin-top: 0;
+  padding: 5px;
+}
 
+.Home-mid-1-img{
+  width: 95%;
+}
 
+.Home-mid-1-img1{
+  width: 95%;
+  margin-top: 43%;
+}
 
+.Home-mid-1-logo{
+  width: 30%;
+  margin-left: 55%;
+  margin-top: -15%;
+}
 
+.Home-mid-1-compass{
+  width: 100%;
+  margin-left: 15%;
+  margin-top: -75%;
+}
 
+.Home-mid-3{
+  margin-top: 15vh;
+  width: 23%;
+  height: 48vh;
+  padding: 5px;
+}
 
+.Home-button{
+  height: 7vh;
+  width: 20%;
+  align-self: flex-start;
+  margin-left: 5%;
+  text-align: center;
+  display: flex;
+}
 
-
-
-
-
-
-
-
-
-
+.Home-button1{
+  border: #000000 solid;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #000000 ;
+  font-size: 25px;
+  transition: 0.8s ease-in-out;
+  &:hover{
+    color: #fff;
+    background-color: #000000;
+    font-size: 30px;
+  }
+}
