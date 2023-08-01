@@ -795,6 +795,11 @@ align-self: center;
   padding: 15px;
 }
 
+.Review-img{
+  padding: 20px;
+  width: 90%;
+}
+
 .Review-map{
   padding: 20px;
   width: 54%;
@@ -915,7 +920,7 @@ align-self: center;
 }
 
 .Home-logoimg{
-  height: 20vh;
+  height: 17vh;
 }
 
 .Home-mid{

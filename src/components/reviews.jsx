@@ -5,6 +5,7 @@ import SideNavbar from "./sidenav";
 import Footer from "./footer";
 import React from "react";
 import Rum from "./rum";
+import Review from './supplie/Review.png';
 
 const reviews = () => {
   return (
@@ -20,6 +21,7 @@ const reviews = () => {
             interface, extensive travel options, and helpful trip planning
             features.
           </p>
+          <img src={Review} className="Review-img" alt="" />
         </div>
         <div className="Review-map">
           <Rum />
