@@ -17,7 +17,7 @@ export default function ChatGPT() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const prompt = `Make a tour plan to '${location}' for '${days}' days with Rs '${budget}' as budget and calculate the expenses along with day.`;
+    const prompt = `Make a tour plan to '${location}' for '${days}' days with Rs '${budget}' as budget and calculate the expenses.`;
     axios
       .post(`${HTTP}`, { prompt })
       .then((res) => {
@@ -36,6 +36,32 @@ export default function ChatGPT() {
   const handlePrompt = (e) => {
     setPrompt(e.target.value);
   };
+  
+  const formatExpenses = (output) => {
+    // Check if output is valid and contains day data
+    if (!output || !output.includes("Day")) {
+      return "Your Schedule ..."
+    }
+
+    // Split output into an array of day data
+    const dayData = output.split("Day ").filter((day) => day.trim() !== "")
+
+    // Format day data as bullet points
+    const formattedOutput = dayData.map((day) => {
+      const dayExpenses = day.split(":");
+      const dayNumber = dayExpenses[0];
+      const expenses = dayExpenses[1];
+
+      return (
+        <li key={dayNumber}>
+          Day {dayNumber}: {expenses}
+        </li>
+      )
+    })
+
+    // Return the formatted bullet points
+    return <ul>{formattedOutput}</ul>
+  }
 
   return (
     <>
@@ -86,7 +112,7 @@ export default function ChatGPT() {
         </form>
         <div className="Ai-response">
             <p className="Ai-response-output">
-            {response ? response : "Your Schedule ..."}
+            {response ? formatExpenses(response) : "Your Schedule ..."}
             </p>
         </div>
         </div><br />
