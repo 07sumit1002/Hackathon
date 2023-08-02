@@ -5,7 +5,7 @@ import SideNavbar from "./sidenav";
 import Footer from "./footer";
 import React from "react";
 import Rum from "./rum";
-import Review from './supplie/Review.png';
+import Review from './supplie/Review.jpeg';
 
 const reviews = () => {
   return (
