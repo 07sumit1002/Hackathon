@@ -80,7 +80,7 @@ export default function ChatGPT() {
                 placeholder="Location"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-              />
+              /><br /><br /><br />
             </div>
             <div className="Ai-input-days">
               <img className='Ai-input-img' src={Time} alt="" />
@@ -91,10 +91,10 @@ export default function ChatGPT() {
                 placeholder="Number of days < 15"
                 value={days}
                 onChange={(e) => setDays(e.target.value)}
-              />
+              /><br /><br /><br />
             </div>
             <div className="Ai-input-rs"> 
-            <br /><br />
+            <br /><br /><br /><br />
               <img className='Ai-input-img' src={Budget} alt="" /> 
               <h1>03 Money management</h1>
               <input
@@ -103,9 +103,9 @@ export default function ChatGPT() {
                 placeholder="Budget in Rs"
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
-              />
+              /><br />
             </div>  
-          </div>{" "}
+          </div><br /><br /><br />{" "}
           <button className="Ai-btn" type="submit">
             Generate Iternary
           </button>
