@@ -44,7 +44,7 @@ export default function ChatGPT() {
     }
 
     // Split output into an array of day data
-    const dayData = output.split("Day ").filter((day) => day !== "")
+    const dayData = output.split("Day ").filter((day) => day.trim() !== "")
 
     // Format day data as bullet points
     const formattedOutput = dayData.map((day) => {
@@ -80,8 +80,8 @@ export default function ChatGPT() {
                 placeholder="Location"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-              /><br /><br /><br />
-            </div>
+              />
+            </div><br /><br /><br />
             <div className="Ai-input-days">
               <img className='Ai-input-img' src={Time} alt="" />
               <h1>02 Time Scheduling</h1>
@@ -91,8 +91,8 @@ export default function ChatGPT() {
                 placeholder="Number of days < 15"
                 value={days}
                 onChange={(e) => setDays(e.target.value)}
-              /><br /><br /><br />
-            </div>
+              />
+            </div><br /><br /><br />
             <div className="Ai-input-rs"> 
             <br /><br /><br /><br />
               <img className='Ai-input-img' src={Budget} alt="" /> 

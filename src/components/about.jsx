@@ -38,19 +38,6 @@ const about = () => {
           <div className="About-team">
             &nbsp;
             <div className="Member">
-              <img className="Member-img" src={Aditi} alt="" />
-              &nbsp;
-              <div className="Member-detail">
-                <a className="Member-link" href="https://www.linkedin.com/in/er-aditi-soni/">
-                  <h2 className="Member-h2">Aditi Soni</h2>
-                </a>
-                <p>Graphic Desginer</p>
-                <p>Manipal University Jaipur</p>
-                <p>BTech CSE 3rd Year</p>
-              </div>
-            </div>
-            &nbsp;
-            <div className="Member">
               <img className="Member-img" src={Aayush} alt="" />
               &nbsp;
               <div className="Member-detail">
@@ -60,6 +47,19 @@ const about = () => {
                 <p>Frontend Developer</p>
                 <p>Manipal University Jaipur</p>
                 <p>BTech CSE-IoT 2nd Year</p>
+              </div>
+            </div>
+            &nbsp;
+            <div className="Member">
+              <img className="Member-img" src={Aditi} alt="" />
+              &nbsp;
+              <div className="Member-detail">
+                <a className="Member-link" href="https://www.linkedin.com/in/er-aditi-soni/">
+                  <h2 className="Member-h2">Aditi Soni</h2>
+                </a>
+                <p>Graphic Desginer</p>
+                <p>Manipal University Jaipur</p>
+                <p>BTech CSE 3rd Year</p>
               </div>
             </div>
             &nbsp;

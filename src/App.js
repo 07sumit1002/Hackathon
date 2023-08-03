@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Rewards from './components/rewards';
 import AI from './components/AI';
 import Reviews from './components/reviews'
+import Services from './components/services.jsx'
+import Contact from './components/contact.jsx'
 import './App.css';
 import React from 'react'
 
@@ -27,6 +29,8 @@ function App() {
         <Route path="/Cultural Education" element={<CultEdu />} />    
         <Route path="/Reviews" element={<Reviews />} />    
         <Route path="/About" element={<About />} />    
+        <Route path="/services" element={<Services />} />    
+        <Route path="/contact" element={<Contact />} />    
       </Routes>
     </Router>
     {/* <Rum /> */}
