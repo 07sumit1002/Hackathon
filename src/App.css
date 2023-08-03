@@ -556,7 +556,6 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* margin-left: 14%; */
 }
 
 .Ai-input-rs{
@@ -566,7 +565,6 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* margin-left: 14%; */
 }
 
 .Ai-input-Loc h1, .Ai-input-days h1, .Ai-input-rs h1{
