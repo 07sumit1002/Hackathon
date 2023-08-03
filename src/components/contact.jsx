@@ -16,8 +16,8 @@ const contact = () => {
       </div>
       <div className='Contact-right'>
         <h1 className='Contact-h1'>Team JourneyPal</h1>
-        <p className='Contact-p'>Mobile: <span className='Contac-span'>+91-7667064537 </span>, <span className='Contac-span'>+91-7014264024 </span></p>
-        <p className='Contact-p'>Email: <span className='Contac-span'>teamjourneypaltrial@gmail.com</span></p>
+        <p className='Contact-p'>Mobile: <br /> &nbsp;&nbsp; <span className='Contac-span'>+91-7667064537 </span>, <span className='Contac-span'>+91-7014264024 </span></p>
+        <p className='Contact-p'>Email: <br /> &nbsp;&nbsp; <span className='Contac-span'>teamjourneypaltrial@gmail.com</span></p>
       </div>
       </div>
       <Footer />
