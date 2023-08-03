@@ -555,7 +555,6 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* margin-left: 14%; */
 }
 
 .Ai-input-rs{
@@ -565,7 +564,6 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* margin-left: 14%; */
 }
 
 .Ai-input-Loc h1, .Ai-input-days h1, .Ai-input-rs h1{
@@ -1001,121 +999,4 @@ align-self: center;
     background-color: #000000;
     font-size: 30px;
   }
-}
-
-
-.Services{
-  width: 97%;
-  height: 80vh;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.Services-left {
-  width: 45%;
-  height: 75vh;
-}
-
-.Services-head{
-  width: 100%;
-  height: 15vh;
-  font-size: 60px;
-  text-align: center;
-}
-
-.Services-head-h2{
-  font-size: 30px;
-  text-align: center;
-}
-
-.Services-list{
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  flex-direction: row;
-}
-
-.Services-list-1, .Services-list-2{
-  width: 100%;
-  height: 60vh;
-}
-
-.Services-list-ul{
-  line-height: 40px;
-}
-
-.Services-list-li{
-  list-style-type: square;
-}
-
-.Services-list-li2{
-  list-style-type: disc;
-}
-
-.Services-right {
-  width: 50%;
-  height: 75vh;
-  display: flex;
-}
-
-.Service-img{
-  width: 100%;
-  align-self: center;
-  margin-top: 10%;
-}
-
-.Contact{
-  width: 97%;
-  height: 80vh;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.Contact-right{
-  width: 50%;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
-
-.Contact-img{
-  width: 70%;
-  align-self: center;
-  height: 70vh;
-}
-
-.Contact-Left {
-  width: 50%;
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.Contact-Head{
-  text-align: center;
-  height: 4vh;
-  font-size: 40px;
-  width: 100%;
-}
-
-.Contact-h1{
-  text-align: center;
-  height: 4vh;
-  font-size: 30px;
-  width: 100%;
-}
-
-.Contact-p{
-  text-align: left;
-  font-size: 25px;
-  font-weight: bold;
-}
-.Contac-span{
-  font-size: 20px;
-  font-weight: 500;
 }
