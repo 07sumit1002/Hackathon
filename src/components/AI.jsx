@@ -44,7 +44,7 @@ export default function ChatGPT() {
     }
 
     // Split output into an array of day data
-    const dayData = output.split("Day ").filter((day) => day.trim() !== "")
+    const dayData = output.split("Day ").filter((day) => day !== "")
 
     // Format day data as bullet points
     const formattedOutput = dayData.map((day) => {
