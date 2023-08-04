@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const { Configuration, OpenAIApi } = require("openai");
 
 const config = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(config);
@@ -22,12 +22,13 @@ app.use(cors());
 
 app.post("/chat", async (req, res) => {
   const { prompt } = req.body;
-
+  console.log(prompt);
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
-    max_tokens: 512,
+    max_tokens: 1024,
     temperature: 0,
     prompt: prompt,
+    
   });
   res.send(completion.data.choices[0].text);
 });
@@ -37,3 +38,5 @@ const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
 });
+
+
