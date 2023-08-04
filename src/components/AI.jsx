@@ -71,7 +71,7 @@ export default function ChatGPT() {
         <form className="Ai-form" onSubmit={handleSubmit}>
           <div className="Ai-form-group">
             <div className="Ai-input-Loc"> 
-              <label className="Ai-label" htmlFor="">AI <br />ITERNARY</label><br />
+              <label className="Ai-label" htmlFor="">AI <br />ITINERARY</label><br />
               <img className='Ai-input-img' src={Earth} alt="" />
               <h1>01 Destination</h1>
               <input
