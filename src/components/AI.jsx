@@ -17,7 +17,7 @@ export default function ChatGPT() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const prompt = `Make a tour plan to '${location}' for '${days}' days with Rs '${budget}' as budget and calculate the expenses.`;
+    const prompt = `Make a tour plan to '${location}' for '${days}' days with Rs '${budget}' as budget in details.`;
     axios
       .post(`${HTTP}`, { prompt })
       .then((res) => {
