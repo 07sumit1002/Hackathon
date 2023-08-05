@@ -16,7 +16,7 @@ const reviews = () => {
         <div className="Review-review">
           <h1 className="Review-review-h1">Reviews</h1>
           <p className="Review-review-para">
-            Our users love Jouneypal! They have shared their incredible
+            Our users love Journeypal! They have shared their incredible
             experiences and positive feedback, praising its user-friendly
             interface, extensive travel options, and helpful trip planning
             features.
