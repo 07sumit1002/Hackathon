@@ -37,7 +37,7 @@ const about = () => {
           </div>
           <div className="About-team">
             &nbsp;
-            <div className="Member">
+{/*             <div className="Member">
               <img className="Member-img" src={Aayush} alt="" />
               &nbsp;
               <div className="Member-detail">
@@ -61,7 +61,7 @@ const about = () => {
                 <p>Manipal University Jaipur</p>
                 <p>BTech CSE 3rd Year</p>
               </div>
-            </div>
+            </div> */}
             &nbsp;
             <div className="Member">
               <img className="Member-img" src={Sumitimg} alt="" />
